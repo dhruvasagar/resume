@@ -1,0 +1,53 @@
+.info .affix {
+  top: 0;
+  left: 0;
+  width: 25%;
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #DDDCE1;
+}
+
+.info .objective {
+  padding: 20px;
+  text-align: justify;
+}
+
+.info .contact {
+  font-weight: bold;
+}
+
+.info .contact .phone {
+  color: #0076C7;
+  font-size: 20px;
+}
+
+.info .contact .site a {
+  color: #333333;
+}
+
+.details {
+  padding: 10px;
+}
+
+.details .company {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.details .projects {
+  padding-left: 20px;
+}
+
+.details .projects dd {
+  padding-bottom: 10px;
+}
+
+.details .educations table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details .educations table td {
+  text-align: center;
+}
