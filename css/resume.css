@@ -13,8 +13,16 @@
 }
 
 .info .objective {
-  padding: 20px;
+  padding: 10px 20px 0 20px;
   text-align: justify;
+}
+
+.info .tags {
+  text-align: left;
+}
+
+.info .tags .label {
+  line-height: 24px;
 }
 
 .info .contact {
@@ -22,12 +30,7 @@
 }
 
 .info .contact .phone {
-  color: #0076C7;
   font-size: 20px;
-}
-
-.info .contact .site a {
-  color: #333333;
 }
 
 .details {
@@ -48,7 +51,7 @@
 }
 
 .details .educations table {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
