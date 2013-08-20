@@ -2,10 +2,17 @@
   top: 0;
   left: 0;
   width: 25%;
-  padding: 10px;
-  padding-bottom: 20px;
   text-align: center;
+  padding-bottom: 20px;
   background-color: #DDDCE1;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  .info .affix {
+    width: auto;
+    position: static;
+  }
 }
 
 .info .affix img {
@@ -26,6 +33,7 @@
 }
 
 .info .contact {
+  color: #333;
   font-weight: bold;
 }
 
@@ -35,6 +43,11 @@
 
 .details {
   padding: 10px;
+}
+
+.details .company {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .details .projects {
@@ -54,8 +67,19 @@
   text-align: center;
 }
 
-.details .skills .progress {
-  width: 80%;
+dl.dl-inverse dt {
+  float: right;
+  text-align: left;
+  margin-left: 20px;
+}
+
+dl.dl-inverse dd {
+  margin-left: 0;
+}
+
+.progress .progress-bar-inverse {
+  float: right;
+  display: block;
 }
 
 @media print {
@@ -66,5 +90,21 @@
 
   .panel {
     page-break-before: always;
+  }
+
+  .progress {
+    -webkit-print-color-adjust: exact;
+    -webkit-box-shadow: inset 0 0;
+    -moz-box-shadow: inset 0 0;
+    box-shadow: inset 0 0;
+    background-color: #f5f5f5 !important;
+  }
+
+  .progress .progress-bar {
+    -webkit-print-color-adjust: exact;
+    -webkit-box-shadow: inset 0 0;
+    -moz-box-shadow: inset 0 0;
+    box-shadow: inset 0 0;
+    background-color: #428bca !important;
   }
 }
