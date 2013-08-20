@@ -6,8 +6,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/resume.css" />
   </head>
   <body>
@@ -31,7 +32,7 @@
               skills, both oral and written.
             </div>
             <span class="icon-stack">
-              <i class="icon-circle icon-stack-base icon-large"></i>
+              <i class="icon-circle icon-stack-base hidden-print"></i>
               <i class="icon-phone icon-light icon-large"></i>
             </span>
             <div class="contact">
@@ -49,7 +50,7 @@
         </div>
         <div class="col-md-9 details">
           <div class="container" style="margin-bottom: 10px;">
-            <ul class="nav nav-pills">
+            <ul class="nav nav-pills hidden-print">
               <li class="active">
                 <a href="#experiences">Experience</a>
               </li>
@@ -66,7 +67,7 @@
               <a id="experiences"></a>
               <h4 class="panel-title">
                 <span class="icon-stack">
-                  <i class="icon-circle icon-stack-base"></i>
+                  <i class="icon-circle icon-stack-base hidden-print"></i>
                   <i class="icon-light icon-briefcase"></i>
                 </span>
                 Experience
@@ -307,7 +308,7 @@
               <a id="educations"></a>
               <h4 class="panel-title">
                 <span class="icon-stack">
-                  <i class="icon-circle icon-stack-base"></i>
+                  <i class="icon-circle icon-stack-base hidden-print"></i>
                   <i class="icon-light icon-trophy"></i>
                 </span>
                 Education
@@ -328,7 +329,14 @@
                   <i class="icon-map-marker"></i>
                   Roorkee, Uttranchal
                 </div>
-                <table class="table">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Term</th>
+                      <th>Percentage Score</th>
+                      <th>Year</th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
                       <td>1<sup>st</sup> Year</td>
@@ -388,7 +396,7 @@
               <a id="skills"></a>
               <h4 class="panel-title">
                 <span class="icon-stack">
-                  <i class="icon-circle icon-stack-base"></i>
+                  <i class="icon-circle icon-stack-base hidden-print"></i>
                   <i class="icon-light icon-bolt"></i>
                 </span>
                 Skills

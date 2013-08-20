@@ -48,6 +48,21 @@
   margin-bottom: 20px;
 }
 
-.details .educations table td {
+.details .educations table td, .details .educations table th {
   text-align: center;
+}
+
+@media print {
+  .info .affix {
+    width: 100%;
+    position: inherit;
+  }
+
+  .info .affix img {
+    margin: 0 auto;
+  }
+
+  .panel {
+    page-break-before: always;
+  }
 }
