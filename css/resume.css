@@ -8,6 +8,10 @@
   background-color: #DDDCE1;
 }
 
+.info .affix img {
+  margin: 0 auto;
+}
+
 .info .objective {
   padding: 20px;
   text-align: justify;
@@ -56,10 +60,6 @@
   .info .affix {
     width: 100%;
     position: inherit;
-  }
-
-  .info .affix img {
-    margin: 0 auto;
   }
 
   .panel {
