@@ -6,7 +6,6 @@
   text-align: center;
   padding-bottom: 20px;
   background-color: #DDDCE1;
-  overflow-y: auto;
 }
 
 @media (max-width: 991px) {
