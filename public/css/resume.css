@@ -5,106 +5,61 @@
   padding: 10px;
   text-align: center;
   padding-bottom: 20px;
-  background-color: #DDDCE1;
+  background-color: #dddce1;
 }
-
-@media (max-width: 991px) {
-  .info .affix {
-    width: auto;
-    position: static;
-  }
-}
-
 .info .affix img {
   margin: 0 auto;
 }
-
 .info .objective {
   padding: 10px 20px 0 20px;
   text-align: justify;
 }
-
 .info .tags {
   text-align: left;
 }
-
 .info .tags .label {
   line-height: 24px;
 }
-
 .info .contact {
-  color: #333;
+  color: #333333;
   font-weight: bold;
 }
-
 .info .contact .phone {
   font-size: 20px;
 }
-
 .details {
   padding: 10px;
 }
-
+.details h4.panel-title .title {
+  padding-left: 5px;
+}
 .details .company {
   font-size: 18px;
   font-weight: bold;
 }
-
 .details .projects {
   padding-left: 20px;
 }
-
 .details .projects dd {
   padding-bottom: 10px;
 }
-
 .details .educations table {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
-
-.details .educations table td, .details .educations table th {
+.details .educations table td,
+.details .educations table th {
   text-align: center;
 }
-
 dl.dl-inverse dt {
   float: right;
   text-align: left;
   margin-left: 20px;
 }
-
 dl.dl-inverse dd {
   margin-left: 0;
 }
-
 .progress .progress-bar-inverse {
   float: right;
   display: block;
-}
-
-@media print {
-  .info .affix {
-    width: 100%;
-    position: inherit;
-  }
-
-  .panel {
-    page-break-before: always;
-  }
-
-  .progress {
-    -webkit-print-color-adjust: exact;
-    -webkit-box-shadow: inset 0 0;
-    -moz-box-shadow: inset 0 0;
-    box-shadow: inset 0 0;
-    background-color: #f5f5f5 !important;
-  }
-
-  .progress .progress-bar {
-    -webkit-print-color-adjust: exact;
-    -webkit-box-shadow: inset 0 0;
-    -moz-box-shadow: inset 0 0;
-    box-shadow: inset 0 0;
-    background-color: #428bca !important;
-  }
 }

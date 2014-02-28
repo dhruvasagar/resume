@@ -1,0 +1,13 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "gulp": "*",
+    "jade": "*",
+    "less": "*",
+    "gulp-jade": "*",
+    "gulp-less": "*",
+    "gulp-uglify": "*"
+  }
+}
