@@ -1,3 +1,21 @@
+mixin education(course, college, specialization, location, score)
+  li.list-group-item
+    .course
+      strong= course
+    .institute
+      strong= college
+    .specialization
+      | Specialization&colon; 
+      strong= specialization
+    .location
+      span.glyphicon.glyphicon-map-marker
+      | #{location}
+    i.fa.fa-trophy
+    | Secured 
+    strong #{score}&percnt; 
+    if block
+      block
+
 .educations.panel.panel-default
   .panel-heading
     a#educations
@@ -5,41 +23,8 @@
       i.fa.fa-book
       span.title Education
   ul.list-group
-    li.list-group-item
-      .course
-        strong Bachelor of Technology
-      .institute
-        strong College of Engineering Roorkee
-      .specialization
-        | Specialization&colon; 
-        strong Information Technology
-      .location
-        span.glyphicon.glyphicon-map-marker
-        | Roorkee&comma; Uttranchal
-      i.fa.fa-trophy
-      | Secured 
-      strong 77&period;9&percnt; 
-      | overall with 
+    +education('Bechelor of Technology', 'College Of Engineering Roorkee', 'Information Technology', 'Roorkee, Uttranchal', 77.9)
+      | overall with
       strong Honors
-    li.list-group-item
-      .course
-        strong Intermediate
-      .institute
-        strong Rajhans Vidyalaya
-      .location
-        span.glyphicon.glyphicon-map-marker
-        | Mumbai&comma; Maharashtra
-      span.fa.fa-trophy
-      | Secured 
-      strong 88&period;20&percnt;
-    li.list-group-item
-      .course
-        strong Matriculate
-      .institute
-        strong Rajhans Vidyalaya
-      .location
-        span.glyphicon.glyphicon-map-marker
-        | Mumbai&comma; Maharashtra
-      span.fa.fa-trophy
-      | Secured 
-      strong 84&period;80&percnt;
+    +education('Intermediate', 'Rajhans Vidyalaya', 'Science', 'Mumbai, Maharastra', 88.20)
+    +education('Matriculate', 'Rajhans Vidyalaya', 'PCM + Computers', 'Mumbai, Maharashtra', 84.80)

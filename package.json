@@ -7,7 +7,6 @@
     "jade": "*",
     "less": "*",
     "gulp-jade": "*",
-    "gulp-less": "*",
-    "gulp-uglify": "*"
+    "gulp-less": "*"
   }
 }

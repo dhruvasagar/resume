@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
-    jade = require('gulp-jade'),
-    uglify = require('gulp-uglify');
+    jade = require('gulp-jade');
 
 var path = {
   assets: {
@@ -15,7 +14,6 @@ var path = {
 gulp.task('less', function () {
   return gulp.src(path.assets.less)
     .pipe(less())
-    .pipe(uglify())
     .pipe(gulp.dest('public/css'));
 });
 
