@@ -1,22 +1,10 @@
-.when.pull-right
-  | 22nd Feb&comma; 2010 to 30th Sep&comma; 2011 &lpar;1&period;5 years&rpar;
-.company
-  | Artha42 Innovations Pvt&period; Ltd&period;
-.location
-  span.glyphicon.glyphicon-map-marker
-  | Bangalore&comma; India
-br
-.designation
-  strong Title&colon; 
-  | Technical Developer &amp; Mentor
-strong Projects&colon;
-dl.projects
-  dt
-    a(href='https://www.apolloprism.com', target='_blank') PHR - Public Health Record
-    span.text-muted - 22nd Feb&comma; 2010&comma; 30th Sep&comma; 2011
-  dd
-    | Aided in design&comma; architecture and development of PHR -
-    | Public Health Record system designed to serve as a tool for
-    | public to store and share their health information&period;
-    br
-    | <strong>Technology Stack</strong>: Sinatra (Ruby), MongoDB, Beanstalk, Memcached
+include ../mixins/experience
+
++company('Artha42 Innovations Pvt. Ltd.', 'Bangalore, India', 'Technical Developer & Mentor', '22nd Feb, 2010 to 30th Sep, 2011 (1.5 years)')
+  +project('PHR - Public Health Record', 'https://www.apolloprism.com', '22nd Feb, 2010 to 30th Sep, 2011')
+    dd
+      | Aided in design&comma; architecture and development of PHR -
+      | Public Health Record system designed to serve as a tool for
+      | public to store and share their health information&period;
+      br
+      | <strong>Technology Stack</strong>: Sinatra (Ruby), MongoDB, Beanstalk, Memcached

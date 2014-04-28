@@ -1,20 +1,4 @@
-mixin education(course, college, specialization, location, score)
-  li.list-group-item
-    .course
-      strong= course
-    .institute
-      strong= college
-    .specialization
-      | Specialization&colon; 
-      strong= specialization
-    .location
-      span.glyphicon.glyphicon-map-marker
-      | #{location}
-    i.fa.fa-trophy
-    | Secured 
-    strong #{score}&percnt; 
-    if block
-      block
+include mixins/education
 
 .educations.panel.panel-default
   .panel-heading
@@ -24,7 +8,7 @@ mixin education(course, college, specialization, location, score)
       span.title Education
   ul.list-group
     +education('Bechelor of Technology', 'College Of Engineering Roorkee', 'Information Technology', 'Roorkee, Uttranchal', 77.9)
-      | overall with
+      | overall with 
       strong Honors
     +education('Intermediate', 'Rajhans Vidyalaya', 'Science', 'Mumbai, Maharastra', 88.20)
     +education('Matriculate', 'Rajhans Vidyalaya', 'PCM + Computers', 'Mumbai, Maharashtra', 84.80)

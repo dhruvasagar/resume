@@ -1,0 +1,7 @@
+mixin skill(label, rating)
+  dt= label
+  dd
+    .progress
+      .progress-bar(role='progressbar', aria-valuenow='#{rating}', aria-valuemin='0', aria-valuemax='10', style='width: #{rating * 10}%')
+        span
+          | #{rating}&sol;10

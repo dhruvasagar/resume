@@ -1,33 +1,19 @@
-.when.pull-right
-  | 18th Aug&comma; 2006&comma; 4th April&comma; 2008 &lpar;1&period;5 years&rpar;
-.company
-  | IBM India Pvt&period; Ltd&period;
-.location
-  span.glyphicon.glyphicon-map-marker
-  | Bangalore&comma; India
-br
-.designation
-  strong Title&colon; 
-  | Application Programmer
-strong Projects&colon;
-dl.projects
-  dt
-    a(href='#', target='_blank') QA Tools Suite
-    span.text-muted - 1st Jan&comma; 2007 to 4th April&comma; 2008
-  dd
-    | Aided in maintenance and development of a suite of tools
-    | used internally in IBM for ensuring Quality Assurance of
-    | projects&period;
-    br
-    | <strong>Technology Stack</strong>: Visual Basic, Java, Lotus Notes, DB2
-  dt
-    a(href='#', target='_blank') CFT&sol;s
-    span.text-muted - 18th Aug&comma; 2006 to 1st Jan&comma; 2007
-  dd
-    | Aided in maintenance and testing of Customer Fulfillment
-    | Tool &sol; Services an application fronted with a Java UI and
-    | backed by mainframe jobs for processing &amp; analyzing
-    | data collected from customers to assess project customer
-    | fulfillment within IBM&period;
-    br
-    | <strong>Technology Stack</strong>: Java, Mainframes, DB2
+include ../mixins/experience
+
++company('IBM India Pvt. Ltd.', 'Bangalore, India', 'Application Programmer', '18th Aug, 2006 to 4th April, 2008 (1.5 years)')
+  +project('QA Tools Suite', '#', '1st Jan, 2007 to 4th Apr, 2008')
+    dd
+      | Aided in maintenance and development of a suite of tools
+      | used internally in IBM for ensuring Quality Assurance of
+      | projects&period;
+      br
+      | <strong>Technology Stack</strong>: Visual Basic, Java, Lotus Notes, DB2
+  +project('CTF/s', '#', '18th Aug, 2006 to 1st Jan, 2007')
+    dd
+      | Aided in maintenance and testing of Customer Fulfillment
+      | Tool &sol; Services an application fronted with a Java UI and
+      | backed by mainframe jobs for processing &amp; analyzing
+      | data collected from customers to assess project customer
+      | fulfillment within IBM&period;
+      br
+      | <strong>Technology Stack</strong>: Java, Mainframes, DB2

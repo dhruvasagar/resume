@@ -1,0 +1,20 @@
+mixin company(name, location, designation, dates)
+  .when.pull-right.text-muted= dates
+  .company= name
+  .location
+    span.glyphicon.glyphicon-map-marker= location
+  br
+  .designation
+    strong Title&colon;
+    | #{designation}
+  strong Projects&colon;
+  dl.projects
+    if block
+      block
+
+mixin project(title, url, dates)
+  dt
+    a(href='#{url}', target='_blank')= title
+    span.text-muted - #{dates}
+  if block
+    block

@@ -1,0 +1,17 @@
+mixin education(course, college, specialization, location, score)
+  li.list-group-item
+    .course
+      strong= course
+    .institute
+      strong= college
+    .specialization
+      | Specialization&colon; 
+      strong= specialization
+    .location
+      span.glyphicon.glyphicon-map-marker
+      | #{location}
+    i.fa.fa-trophy
+    | Secured 
+    strong #{score}&percnt; 
+    if block
+      block
