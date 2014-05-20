@@ -169,6 +169,7 @@
   .info {
     width: 100%;
     page-break-after: always;
+    page-break-inside: avoid;
   }
   .info .affix {
     width: 100%;
@@ -177,16 +178,8 @@
   }
   .details {
     width: 100%;
-    /* page-break-before: always; */
-  }
-  .details .panel {
-    page-break-inside: avoid;
-  }
-  .details .panel .list-group-item {
-    page-break-inside: avoid;
-  }
-  .details .panel:last-child {
     page-break-after: auto;
+    page-break-inside: avoid;
   }
   .details .skills .progress {
     background-color: #F5F5F5 !important;

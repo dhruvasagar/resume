@@ -170,6 +170,7 @@
   .info {
     width: 100%;
     page-break-after: always;
+    page-break-inside: avoid;
 
     .affix {
       width: 100%;
@@ -180,19 +181,8 @@
 
   .details {
     width: 100%;
-    page-break-before: always;
-
-    .panel {
-      page-break-inside: avoid;
-
-      .list-group-item {
-        page-break-inside: avoid;
-      }
-    }
-
-    .panel:last-child {
-      page-break-after: auto;
-    }
+    page-break-after: auto;
+    page-break-inside: avoid;
 
     .skills {
       .progress{
