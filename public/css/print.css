@@ -181,6 +181,13 @@
     page-break-after: auto;
     page-break-inside: avoid;
   }
+  .details .collapsible .projects.collapse {
+    height: auto !important;
+    display: block !important;
+  }
+  .details .collapsible .glyphicon {
+    display: none;
+  }
   .details .skills .progress {
     background-color: #F5F5F5 !important;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F5F5F5', endColorstr='#F5F5F5')" !important;

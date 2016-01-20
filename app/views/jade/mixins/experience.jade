@@ -7,10 +7,12 @@ mixin company(name, location, designation, dates)
   .designation
     strong Title&colon;
     | #{designation}
-  strong Projects&colon;
-  dl.projects
-    if block
-      block
+  .collapsible
+    strong Projects&colon;
+    span.glyphicon.glyphicon-triangle-right.text-muted
+    dl.projects.collapse
+      if block
+        block
 
 mixin project(title, url, dates)
   dt
