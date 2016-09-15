@@ -1,17 +1,11 @@
 mixin education(course, college, specialization, location, score)
-  li.list-group-item
-    .course
-      strong= course
+  .education
+    h4.course.light #{course} in #{specialization}
     .institute
       strong= college
-    .specialization
-      | Specialization&colon; 
       strong= specialization
-    .location
-      span.glyphicon.glyphicon-map-marker
-      | #{location}
-    i.fa.fa-trophy
-    | Secured 
+    i.fa.fa-trophy &nbsp;
+    span Secured 
     strong #{score}&percnt; 
     if block
       block

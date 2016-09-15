@@ -1,18 +1,13 @@
 mixin company(name, location, designation, dates)
-  .when.pull-right.text-muted= dates
-  .company= name
-  .location
-    span.glyphicon.glyphicon-map-marker= location
-  br
-  .designation
-    strong Title&colon;
-    | #{designation}
-  .collapsible
-    strong Projects&colon;
-    span.glyphicon.glyphicon-triangle-right.text-muted
-    dl.projects.collapse
-      if block
-        block
+  .company
+    .when.pull-right
+      .text-muted= dates
+      .text-muted= location
+    h4.designation.light= designation
+    strong.company-name.text-danger= name
+    br
+    if block
+      block
 
 mixin project(title, url, dates)
   dt
