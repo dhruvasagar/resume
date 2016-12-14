@@ -84,3 +84,13 @@ dl.dl-inverse dd {
 .glyphicon {
   color: #777;
 }
+h1 .fa {
+  font-size: 20px;
+  margin: 0 5px;
+}
+h1 .fa.fa-facebook-official {
+  color: #3b5998;
+}
+h1 .fa.fa-linkedin-square {
+  color: #0077B5;
+}
