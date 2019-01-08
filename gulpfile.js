@@ -1,31 +1,36 @@
-var gulp = require('gulp'),
-    less = require('gulp-less'),
-    jade = require('gulp-jade')
+const { src, dest, watch, parallel } = require('gulp');
+const pug = require('gulp-pug')
+const less = require('gulp-less')
 
-var path = {
+var paths = {
   assets: {
-    less: 'app/assets/less/**/*.less'
+    less: 'src/assets/less/**/*.less'
   },
   views: {
-    jade: 'app/views/jade/**/*.jade'
+    pug: 'src/views/pug/**/*.pug'
   }
 }
 
-gulp.task('less', function () {
-  return gulp.src(path.assets.less)
+function build_less() {
+  return src(paths.assets.less)
     .pipe(less())
-    .pipe(gulp.dest('public/css'))
-})
+    .pipe(dest('public/css'))
+}
 
-gulp.task('jade', function () {
-  return gulp.src(path.views.jade)
-    .pipe(jade())
-    .pipe(gulp.dest('public'))
-})
+function build_pug() {
+  return src(paths.views.pug)
+    .pipe(pug())
+    .pipe(dest('public'))
+}
 
-gulp.task('watch', function () {
-  gulp.watch(path.views.jade, gulp.series('jade'))
-  gulp.watch(path.assets.less, gulp.series('less'))
-})
+function run_watch() {
+  watch([paths.views.pug], build_pug)
+  watch([paths.assets.less], build_less)
+}
 
-gulp.task('default', gulp.series('jade', 'less', 'watch'))
+module.exports = {
+  pug: build_pug,
+  less: build_less,
+  watch: run_watch,
+  default: parallel(build_less, build_pug)
+}

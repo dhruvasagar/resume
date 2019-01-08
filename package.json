@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-jade": "*",
-    "gulp-less": "^4.0.0",
-    "jade": "*",
+    "gulp": "*",
+    "gulp-pug": "*",
+    "gulp-less": "*",
+    "pug": "*",
     "less": "*"
   }
 }
