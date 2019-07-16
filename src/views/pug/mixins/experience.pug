@@ -11,7 +11,7 @@ mixin company(name, location, designation, dates)
 
 mixin project(title, url, dates)
   dt
-    a(href='#{url}', target='_blank')= title
+    a(href=url, target='_blank')= title
     span.text-muted - #{dates}
   if block
     block

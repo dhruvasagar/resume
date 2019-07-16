@@ -4,7 +4,21 @@ include ../mixins/experience
   div
     ul
       li As a java developer contributed to several in-house products
-    p Worked with technologies : Java, Visual Basic, Lotus Notes, DB2
+    p
+      table.table.table-bordered
+        caption Worked with technologies 
+        tr
+          td
+            strong Back End
+          td Java, Visual Basic, Lotus Notes
+        tr
+          td
+            strong Databases
+          td DB2
+        tr
+          td
+            strong Front End
+          td Java Swings
   // div
     +project('QA Tools Suite', '#', '1st Jan, 2007 to 4th Apr, 2008')
       dd
